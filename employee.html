@@ -1,0 +1,284 @@
+<!DOCTYPE html>
+<html  dir="rtl" lang="ar ">
+<head>
+<meta charset="UTF-8"/>
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+<title>Dashboard</title>
+<link rel="stylesheet" href="style.css">
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@300;500&display=swap" rel="stylesheet" />
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto|Varela+Round">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/icon?family=Material+Icons">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<title>منطقة فش فرش </title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+<link href="https://fonts.googleapis.com/css?family=Poppins:300,400,500,600,700,800,900" rel="stylesheet">
+<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+<div class="wrapper d-flex align-items-stretch">
+<nav id="sidebar">
+<div class="custom-menu">
+<button type="button" id="sidebarCollapse" class="btn btn-primary">
+<i class="fa fa-bars"></i>
+<span class="sr-only">Toggle Menu</span>
+</button>
+</div>
+<div class="p-4">
+<h1><a href="index.html" class="logo">منطقة فش فرش </a></h1>
+<ul class="list-unstyled components mb-5">
+<li>
+<a href="employee.html"><span class="fa fa-user mr-3"></span> الموظفين </a>
+</li>
+<li>
+<a href="Beneficiaries.html"><span class="fa fa-briefcase mr-3"></span> المستفيدين </a>
+</li>
+<li>
+<a href="Benefits.html"><span class="fa fa-sticky-note mr-3"></span> الاستفادات </a>
+</li>
+<li>
+<a href="Squares.html"><span class="fa fa-suitcase mr-3"></span> المربعات</a>
+</li>
+</ul>
+</div>
+</nav>
+
+<!-- Page Content  -->
+<div id="content" class="p-4 p-md-5 pt-5">
+<div class="content w-full">
+<div class="container-xl">
+<div class="table-responsive">
+<div class="table-wrapper">
+<div class="table-title">
+	<div class="row">
+		<div class="col-sm-6">
+			<h2>الموظفين </h2>
+		</div>
+		<div class="col-sm-6">
+			<a href="#addEmployeeModal" class="btn btn-success" data-toggle="modal"><i class="material-icons">&#xE147;</i> <span>اضافة موظف </span></a>
+			<a href="#deleteEmployeeModal" class="btn btn-danger" data-toggle="modal"><i class="material-icons">&#xE15C;</i> <span>حذف </span></a>						
+		</div>
+	</div>
+</div>
+<table class="table table-striped table-hover">
+	<thead>
+		<tr>
+			<th>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="selectAll">
+					<label for="selectAll"></label>
+				</span>
+			</th>
+			<th>الاسم </th>
+			<th>البريد الإلكتروني </th>
+			<th>العنوان </th>
+			<th>رقم الجوال </th>
+		</tr>
+	</thead>
+	<tbody>
+		<tr>
+			<td>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="checkbox1" name="options[]" value="1">
+					<label for="checkbox1"></label>
+				</span>
+			</td>
+			<td>احمد </td>
+			<td>ahmed@mail.com</td>
+			<td>خانيونس </td>
+			<td>059999999</td>
+			<td>
+				<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+				<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="checkbox2" name="options[]" value="1">
+					<label for="checkbox2"></label>
+				</span>
+			</td>
+			<td>محمد </td>
+			<td>mhomed@mail.com</td>
+			<td>القرارة</td>
+			<td>0599988888</td>
+			<td>
+				<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+				<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="checkbox3" name="options[]" value="1">
+					<label for="checkbox3"></label>
+				</span>
+			</td>
+			<td>محمود</td>
+			<td>mhmoud@mail.com</td>
+			<td>المعسكر </td>
+			<td>0599887776</td>
+			<td>
+				<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+				<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+			</td>
+		</tr>
+		<tr>
+			<td>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="checkbox4" name="options[]" value="1">
+					<label for="checkbox4"></label>
+				</span>
+			</td>
+			<td>محمود</td>
+			<td>mhmoud@mail.com</td>
+			<td>عبسان</td>
+			<td>0599988666</td>
+			<td>
+				<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+				<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+			</td>
+		</tr>					
+		<tr>
+			<td>
+				<span class="custom-checkbox">
+					<input type="checkbox" id="checkbox5" name="options[]" value="1">
+					<label for="checkbox5"></label>
+				</span>
+			</td>
+			<td>اسامة</td>
+			<td>osama@mail.com</td>
+			<td>بني سهيلا</td>
+			<td>059934752</td>
+			<td>
+				<a href="#editEmployeeModal" class="edit" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Edit">&#xE254;</i></a>
+				<a href="#deleteEmployeeModal" class="delete" data-toggle="modal"><i class="material-icons" data-toggle="tooltip" title="Delete">&#xE872;</i></a>
+			</td>
+		</tr> 
+	</tbody>
+</table>
+<div class="clearfix">
+	<div class="hint-text">اظهر  <b>5</b> الى  <b>25</b> ادخال </div>
+	<ul class="pagination">
+		<li class="page-item disabled"><a href="#">السابق </a></li>
+		<li class="page-item"><a href="#" class="page-link">1</a></li>
+		<li class="page-item"><a href="#" class="page-link">2</a></li>
+		<li class="page-item active"><a href="#" class="page-link">3</a></li>
+		<li class="page-item"><a href="#" class="page-link">4</a></li>
+		<li class="page-item"><a href="#" class="page-link">5</a></li>
+		<li class="page-item"><a href="#" class="page-link">التالي </a></li>
+	</ul>
+</div>
+</div>
+</div>        
+</div>
+<!-- Edit Modal HTML -->
+<div id="addEmployeeModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<form>
+	<div class="modal-header">						
+		<h4 class="modal-title">اضافة موظف </h4>
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	</div>
+	<div class="modal-body">					
+		<div class="form-group">
+			<label>الاسم </label>
+			<input type="text" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label>البريد الإلكتروني </label>
+			<input type="email" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label>العنوان</label>
+			<textarea class="form-control" required></textarea>
+		</div>
+		<div class="form-group">
+			<label>رقم الجوال </label>
+			<input type="text" class="form-control" required>
+		</div>					
+	</div>
+	<div class="modal-footer">
+		<input type="button" class="btn btn-default" data-dismiss="modal" value="الغاء">
+		<input type="submit" class="btn btn-success" value="أضف">
+	</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Edit Modal HTML -->
+<div id="editEmployeeModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<form>
+	<div class="modal-header">						
+		<h4 class="modal-title">تعديل بيانات الموظف </h4>
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	</div>
+	<div class="modal-body">					
+		<div class="form-group">
+			<label>الاسم </label>
+			<input type="text" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label>البريد الاإلكتروني </label>
+			<input type="email" class="form-control" required>
+		</div>
+		<div class="form-group">
+			<label>العنوان </label>
+			<textarea class="form-control" required></textarea>
+		</div>
+		<div class="form-group">
+			<label>رقم الجوال </label>
+			<input type="text" class="form-control" required>
+		</div>					
+	</div>
+	<div class="modal-footer">
+		<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+		<input type="submit" class="btn btn-info" value="Save">
+	</div>
+</form>
+</div>
+</div>
+</div>
+<!-- Delete Modal HTML -->
+<div id="deleteEmployeeModal" class="modal fade">
+<div class="modal-dialog">
+<div class="modal-content">
+<form>
+	<div class="modal-header">						
+		<h4 class="modal-title">حذف موظف </h4>
+		<button type="button" class="close" data-dismiss="modal" aria-hidden="true">&times;</button>
+	</div>
+	<div class="modal-body">					
+		<p>هل أنت متأكد أنك تريد حذف هذه السجلات؟
+		</p>
+		<p class="text-warning"><small>لا يمكن التراجع عن هذا الإجراء.
+		</small></p>
+	</div>
+	<div class="modal-footer">
+		<input type="button" class="btn btn-default" data-dismiss="modal" value="Cancel">
+		<input type="submit" class="btn btn-danger" value="Delete">
+	</div>
+</form>
+</div>
+</div>
+</div>
+
+</body>
+<script src="https://code.jquery.com/jquery-3.5.1.min.js"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js"></script>
+
+
+</html>
